@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Check Mate Art</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            font-family: sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.3);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Galería de Obras</h1>
+
+    <div class="gallery">
+        <img src="imgs/caballo.jpg" alt="Obra 1">
+        <img src="imgs/arm_bar.jpg" alt="Obra 2">
+        <img src="imgs/white_lyon.jpg" alt="Obra 3">
+        <img src="imgs/wrist_lock.jpg" alt="Obra 4">
+        <img src="imgs/ramon_pai.jpg" alt="Obra 5">
+        <img src="imgs/llave.jpg" alt="Obra 6">
+
+        <!-- Agrega más imágenes aquí -->
+    </div>
+
+    <p style="text-align:center;">
+        <a href="index.html" style="color: red;">Volver a la página principal</a>
+    </p>
+
+</body>
+</html>
